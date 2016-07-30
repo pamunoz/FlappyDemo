@@ -1,11 +1,10 @@
 package com.pfariasmunoz.game.states;
 
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
-
 import java.util.Stack;
 
 /**
- * Created by pablo on 30-07-16.
+ * Created by Pablo Farias on 30-07-16.
  */
 public class GameStateManager {
 
