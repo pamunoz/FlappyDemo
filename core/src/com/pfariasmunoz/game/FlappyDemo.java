@@ -21,6 +21,7 @@ public class FlappyDemo extends ApplicationAdapter {
 		batch = new SpriteBatch();
 		gsm = new GameStateManager();
         Gdx.gl.glClearColor(1, 0, 0, 1);
+        gsm.push(new MenuState(gsm));
     }
 
 	@Override
@@ -28,12 +29,10 @@ public class FlappyDemo extends ApplicationAdapter {
 		Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
         gsm.update(Gdx.graphics.getDeltaTime());
         gsm.render(batch);
-        gsm.push(new MenuState(gsm));
-        
 	}
 	
-	@Override
-	public void dispose () {
-		batch.dispose();
-	}
+//	@Override
+//	public void dispose () {
+//		batch.dispose();
+//	}
 }
