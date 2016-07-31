@@ -1,6 +1,7 @@
 package com.pfariasmunoz.game.states;
 
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
+
 import java.util.Stack;
 
 /**
@@ -19,11 +20,11 @@ public class GameStateManager {
     }
 
     public void pop() {
-        states.pop();
+        states.pop().dispose();
     }
 
     public void set(State state) {
-        states.pop();
+        states.pop().dispose();
         states.push(state);
     }
 
