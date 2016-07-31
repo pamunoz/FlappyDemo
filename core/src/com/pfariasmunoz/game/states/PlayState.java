@@ -59,6 +59,7 @@ public class PlayState extends State {
             }
 
             if(tube.collides(bird.getBounds())) {
+
                 gsm.set(new PlayState(gsm));
                 break;
             }
